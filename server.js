@@ -5,6 +5,8 @@ import {logger} from './middleware/logger'
 
 const PORT = process.env.PORT || 3500
 
+console.log(PORT,"PORT")
+
 app.use(logger)
 app.use('/',join(__dirname,'/public'))
 app.use('/',require('./routes/root'))
